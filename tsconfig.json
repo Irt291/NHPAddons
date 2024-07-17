@@ -1,0 +1,20 @@
+{ // fuck typescript
+    "compilerOptions": {
+        "module": "ES2022",
+        "moduleResolution": "bundler",
+        "target": "ES6",
+        "lib": ["ES2022", "DOM", "DOM.Iterable"],
+        "noImplicitAny": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "outDir": "./dist/js",
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+}

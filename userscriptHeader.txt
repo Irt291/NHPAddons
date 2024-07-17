@@ -1,0 +1,9 @@
+// ==UserScript==
+// @name         NHP WEB
+// @match        *://*.nhpoj.net/*
+// @grant        none
+// @version      6.9
+// @author       Irt291
+// @run-at       document-idle
+// @description  làm màu cho /user-home; fix SEB contest
+// ==/UserScript==

@@ -1,0 +1,19 @@
+{
+    "name": "nhpwebfix",
+    "version": "6.9.6",
+    "description": "Vai Lone Luon",
+    "scripts": {
+        "build:tsc": "tsc",
+        "build:webpack": "webpack --config webpack.config.js",
+        "build:userscript": "node buildUserscript.mjs",
+        "build": "npm run build:tsc && npm run build:webpack && npm run build:userscript"
+    },
+    "author": "Irt291",
+    "license": "MIT",
+    "devDependencies": {
+        "terser-webpack-plugin": "^5.3.10",
+        "typescript": "^5.5.3",
+        "uglify-js": "^3.19.0",
+        "webpack-cli": "^5.1.4"
+    }
+}
