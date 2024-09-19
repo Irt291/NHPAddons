@@ -1,6 +1,6 @@
 {
     "name": "nhpwebfix",
-    "version": "6.9.6",
+    "version": "9.6.9",
     "description": "Vai Lone Luon",
     "scripts": {
         "build:tsc": "tsc",

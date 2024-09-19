@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         NHP WEB
 // @match        *://*.nhpoj.net/*
+// @match        *://*.ctoj.net/*
 // @grant        none
-// @version      6.9
+// @version      9.6
 // @author       Irt291
 // @run-at       document-idle
-// @description  làm màu cho /user-home; fix SEB contest
+// @description  làm màu cho /user-home; fix SEB contest; preview pdf cho ctoj (fuck it!)
 // ==/UserScript==

@@ -119,7 +119,7 @@ function drawStatus(problemsList: Problems, problemDiv: HTMLElement) {
 
 
 
-export async function UserHomeAddon() {
+export async function UserHomeAddon() { // callback hell, idkare, it's looks comfortable
     waitForElement("#problems").then(
         (problemsDiv) => {
             waitForElement(".drop-menu-title > span:nth-child(1)").then(

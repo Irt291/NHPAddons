@@ -7,7 +7,7 @@ try {
     if (!fs.existsSync(sourceFile)) process.exit();
     
     let code = fs.readFileSync(sourceFile, "utf-8");
-    if (code.match("// ==UserScript==")) process.exit();
+    if (code.includes("// ==UserScript==")) process.exit();
     
     let header = fs.readFileSync("userscriptHeader.txt", "utf-8");
     let content = header + "\n\n" + code;

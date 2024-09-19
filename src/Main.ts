@@ -1,18 +1,23 @@
 "use Mr.P";
 "use strict";
 
+import { FuckPDF } from "./FuckPDF";
 import { ContestFix } from "./ContestFix";
 import { UserHomeAddon } from "./UserHomeAddon";
 
 
-async function Main() { // khều donate thế cơ mà web vẫn suck, best Mr.P rồi :))
+async function Main() {
     console.log("NHP Fix by Irt291 Loaded!");
     let currentUrl = window.location.href.split("://").at(1);
-    if (currentUrl.match(/^nhpoj\.net\/contest\/\d+$/)) { // regẽ lỏd
+    if (currentUrl.match(/^(nhp|ct)oj\.net\/contest\/\d+$/)) { // regẽ lỏd
         await ContestFix(); // yo shut the fuck up and complete ur fucking SEB exam right in nhpoj.net
     }
     if (currentUrl.includes("user-home")) {
         await UserHomeAddon(); // wysi
+    }
+    if (currentUrl.includes("problem/")) {
+        console.log(currentUrl);
+        await FuckPDF();
     }
 }
 
